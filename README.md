@@ -33,6 +33,10 @@ Utilized Python 3.7.6 and Visual Studio Code 1.66.1
 - Diana DeGette **won the election** with 272,892 votes, or 73.8% of votes.
 - Charles Casper Stockham came in second with 85,213 votes, or 20.0% of votes.
 - Raymon Anthony Doane came in last with 11,606 votes, or 3.1% of votes.
+---
+![Election_Results_Png](Resources/election_analysis_txt.png)
+
+
 
 ### Code
 
