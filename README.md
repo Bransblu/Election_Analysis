@@ -36,6 +36,8 @@ Utilized Python 3.7.6 and Visual Studio Code 1.66.1
 ---
 ![Election_Results_Png](Resources/election_analysis_txt.png)
 
+![Election_Results_Terminal.png](Resources/election_analysis_terminal.png)
+
 
 
 ### Code
@@ -109,3 +111,32 @@ Utilized Python 3.7.6 and Visual Studio Code 1.66.1
             winning_county = county_name
 
 ## Election Audit Summary
+
+### Statement to election commission
+This script can be used to analyze any election going forward. Included are two examples of how to change the script to expand on functionality.
+#### Example 1
+More information can be displayed regarding the standings and relative turnout for counties. Instead of solely listing the Largest County Turnout, other benchmarks or rankings could be included. For example, the county with the lowest turnout could be listed. 
+
+  
+    winning_county = ""
+    winning_county_votes = 0
+    winning_county_percentage = 0
+    lowest_county = ""
+    lowest_county_votes = 0
+    lowest_county_percentage = 0
+    
+In this specific example, an if statement would just need to be written to determine to county with the lowest turnout.
+
+#### Example 2
+There could be added elements to the data and output. For example, if the dataset included political affiliation, the script could be adjusted to link the political affiliation to the candidate. 
+
+    for row in reader
+      political_affiliation = row[3]
+      
+      if political_affiliation not in candidate_options:
+      
+        candidate_options.append(political_affiliation)
+        
+Adding the political affiliation to a list and then passing that list on to candidates would give the commission the ability to track what affiliation each candidate was.
+    
+    
